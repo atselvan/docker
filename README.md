@@ -6,11 +6,11 @@ using docker.
 ## Table of contents
 
 * Prerequisites
-  * [Install Virtual Box](./docs/install-virtualbox.md)
-  * [Configure Ubuntu image in virtual box](./docs/ubuntu-virtulbox.md)
-  * [Getting started with Ubuntu](./docs/ubuntu-getting-started.md)
+    * [Install Virtual Box](./docs/install-virtualbox.md)
+    * [Configure Ubuntu image in virtual box](./docs/ubuntu-virtulbox.md)
+    * [Getting started with Ubuntu](./docs/ubuntu-getting-started.md)
 * Docker
-  * [Introduction](./docs/docker.md)
+    * [Introduction](./docs/docker.md)
 
 ## Learn Markdown
 
