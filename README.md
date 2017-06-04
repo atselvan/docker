@@ -1,25 +1,25 @@
-# CI-CD tooling #
+# CI-CD tooling
 
 This README explains the steps necessary to get selected CICD application up and running on a virtual ubuntu machine
 using docker.
 
-### Table of contents ###
+## Table of contents
 
-* [Install Virtual Box](./src/docs/install-virtualbox.md)
-* [Configure Ubuntu image in virtual box](src/docs/ubuntu-virtulbox.md)
-* [Getting started with Ubuntu](src/docs/ubuntu-getting-started.md)
-* [Docker Introduction](src/docs/docker.md)
+* Prerequisites
+    ** [Install Virtual Box](./docs/install-virtualbox.md)
+    ** [Configure Ubuntu image in virtual box](./docs/ubuntu-virtulbox.md)
+    ** [Getting started with Ubuntu](./docs/ubuntu-getting-started.md)
+* Docker
+    ** [Introduction](./docs/docker.md)
 
-### Learn Markdown
+## Learn Markdown
 
-My complete documentation is created in markdown syntax.
+The complete documentation is created in markdown syntax.
 Markdown is a lightweight markup language with plain text formatting syntax. It's designed so that it can be converted 
 to HTML and many other formats using a tool by the same name.
 
-[Learn Markdown][md]
+[Learn Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-[md]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+## Repo owner
 
-### Who do I talk to for doubts? ###
-
-Repo owner : **Allan Selvan [+31 626952416]**
+**Allan Selvan [+31 626952416]**

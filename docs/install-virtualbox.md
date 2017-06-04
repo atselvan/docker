@@ -20,13 +20,16 @@
 
 * From VirtualBox main window, go to File->Preferences. This will open VirtualBox Preferences window. Navigate to 
   Extension as shown in the picture below.
+  
   ![Alt text](images/install-virtualbox-file-preferences.png)
 
 * Next, click on the small down arrow on the right side of the window (as indicated in the above picture). Navigate and 
   select the Extension Pack you downloaded. 
+  
   ![Alt text](images/install-virtualbox-file-preferences-browse.png)
   
 * You will be asked to confirm VirtualBox Extension Pack setup. Confirm and install the extension pack.
+  
   ![Alt text](images/install-virtualbox-extensions-installed.png)
 
 ##Useful links:
