@@ -1,4 +1,6 @@
-# Completely uninstall docker
+# [Completely uninstall docker](../scripts/uninstall-docker.sh)
+
+## Uninstall steps
 
 ```sh
 sudo apt-get purge docker-engine

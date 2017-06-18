@@ -12,11 +12,12 @@
 
 ## Topics (In no specific order)
 
-* Docker introduction **[IN PROGRESS]**
-* Docker installation **[DONE]**
-* Basic Docker commands **[IN PROGRESS]**
-* Docker Swarm **[IN PROGRESS]**
 * Learn Virtual Box / OS Box **[DONE]**
+* Docker introduction **[DONE]**
+* Docker installation **[DONE]**
+* Basic Docker commands **[DONE]**
+* Docker networking **[DONE]**
+* Docker Swarm **[IN PROGRESS]**
 * STPL
  ** core
  ** java

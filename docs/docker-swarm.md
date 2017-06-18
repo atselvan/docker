@@ -2,6 +2,8 @@
 
 ## Initialising Swarm mode
 
+https://docs.docker.com/engine/reference/commandline/swarm_init/
+
 allan@osboxes:~$ docker swarm init --advertise-addr 192.168.2.13
 Swarm initialized: current node (g175fujzdclebxdxfayftmauh) is now a manager.
 

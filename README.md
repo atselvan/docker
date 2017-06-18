@@ -1,7 +1,6 @@
 # CI-CD tooling
 
-This README explains the steps necessary to get selected CICD application up and running on a virtual ubuntu machine
-using docker.
+This README explains the steps necessary to get selected CICD application up and running on a virtual ubuntu machine using docker.
 
 ## Table of contents
 
@@ -11,12 +10,16 @@ using docker.
     * [Getting started with Ubuntu](./docs/ubuntu-getting-started.md)
 * Docker
     * [Introduction](./docs/docker.md)
+    * Provisioning
+        * [Install docker](./docs/install-docker.md)
+        * [Uninstall docker](./docs/uninstall-docker.md)
+    * [Docker Networks](./docs/docker-networks.md)
+    * [Docker swarm](./docs/docker-swarm.md)
 
 ## Learn Markdown
 
 The complete documentation is created in markdown syntax.
-Markdown is a lightweight markup language with plain text formatting syntax. It's designed so that it can be converted 
-to HTML and many other formats using a tool by the same name.
+Markdown is a lightweight markup language with plain text formatting syntax. It's designed so that it can be converted to HTML and many other formats using a tool by the same name.
 
 [Learn Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
