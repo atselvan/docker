@@ -39,3 +39,13 @@
 
 [vb]: http://download.virtualbox.org/virtualbox/5.1.18/VirtualBox-5.1.18-114002-Win.exe
 [vbe]: http://download.virtualbox.org/virtualbox/5.1.18/Oracle_VM_VirtualBox_Extension_Pack-5.1.18-114002.vbox-extpack
+
+## Linux
+
+wget http://download.virtualbox.org/virtualbox/5.1.22/virtualbox-5.1_5.1.22-115126~Ubuntu~yakkety_amd64.deb
+
+apt-get install ./virtualbox-5.1_5.1.22-115126~Ubuntu~yakkety_amd64.deb
+
+
+
+

@@ -42,6 +42,17 @@ sudo apt-get install vim
 
 [Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
 
+sudo apt-get install openssh-server openssh-client
+
+sudo mkdir /appl
+chown -R allan:root /appl
+
+apt-get install git
+
+apt-get install yum
+
+apt-get install yum-utils
+
 
 
 
