@@ -1,6 +1,6 @@
-#Getting Started with Ubuntu
+# Getting Started with Ubuntu
 
-##Add a new user with sudo privileges
+## Add a new user with sudo privileges
 
 Login as a root user using the default username and password.
 
@@ -22,7 +22,7 @@ The new user will appear in the Ubuntu UI
 
 ![Alt text](images/ubuntu-getting-started-useradd.png)
 
-##Update default software's 
+## Update default software's
 
 ```sh
 apt-get update
@@ -30,9 +30,9 @@ apt-get update
 
 [...more information about apt-get update](./apt-get-update.md)
 
-##Additional add-on's
+## Additional add-on's
 
-**Hitting arrow keys adds characters in vi editor**
+### Hitting arrow keys adds characters in vi editor**
 
 Install vim to fix this issue...
 
@@ -41,7 +41,3 @@ sudo apt-get install vim
 ```
 
 [Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
-
-
-
-

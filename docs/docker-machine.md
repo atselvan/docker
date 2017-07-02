@@ -17,4 +17,10 @@ root@osboxes:/appl/template# curl -L https://github.com/docker/machine/releases/
 root@osboxes:/appl/template# docker-machine version
 docker-machine version 0.10.0, build 76ed2a6
 
+docker-machine create -d virtualbox --virtualbox-no-vtx-check 
+
+Waiting for an IP...
+Error creating machine: Error in driver during machine creation: Too many retries waiting for SSH to be available.  Last error: Maximum number of retries (60) exceeded
+
+
 

@@ -18,6 +18,7 @@
 * Basic Docker commands **[DONE]**
 * Docker networking **[DONE]**
 * Docker Swarm **[IN PROGRESS]**
+* Versioning a Docker Image https://medium.com/travis-on-docker/how-to-version-your-docker-images-1d5c577ebf54
 * STPL
  ** core
  ** java
