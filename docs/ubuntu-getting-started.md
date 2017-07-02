@@ -40,4 +40,23 @@ Install vim to fix this issue...
 sudo apt-get install vim
 ```
 
+<<<<<<< HEAD
 [Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
+=======
+[Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
+
+sudo apt-get install openssh-server openssh-client
+
+sudo mkdir /appl
+chown -R allan:root /appl
+
+apt-get install git
+
+apt-get install yum
+
+apt-get install yum-utils
+
+
+
+
+>>>>>>> 05c9f5168a9a017ca2d0c5a1c7a8f0198d6793c4
