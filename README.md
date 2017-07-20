@@ -10,10 +10,10 @@ This README explains the steps necessary to get selected CICD application up and
     * [Getting started with Ubuntu](./docs/ubuntu-getting-started.md)
 * Docker
     * [Introduction](./docs/docker.md)
-    * Provisioning
-        * [Install docker](./docs/install-docker.md)
-        * [Uninstall docker](./docs/uninstall-docker.md)
+    * [Provisioning](./docs/provisioning-docker.md)
     * [Docker Networks](./docs/docker-networks.md)
+    * [Docker Compose](./docs/docker-compose.md)
+    * [Docker Machine](./docs/docker-machine.md)
     * [Docker swarm](./docs/docker-swarm.md)
 
 ## Learn Markdown

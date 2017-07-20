@@ -1,6 +1,6 @@
-##How to attach/configure image with VirtualBox?
+# How to attach/configure image with VirtualBox?
 
-**Download and configure**
+## Download and configure
 
 * [Download][uob] the latest ubuntu 64-bit Virtual disk image
 * Follow the the [configuration guide][ucg] to load the image
@@ -13,9 +13,12 @@
 
 [[FIX]][fix]
 
-**Default credentials for the Ubuntu image**
+## Default credentials for the Ubuntu image
 
-`Username: osboxes Password: osboxes.org`
+```txt
+Username: osboxes 
+Password: osboxes.org
+```
 
 [uob]: https://drive.google.com/uc?export=download&confirm=MHMo&id=0B_HAFnYs6Ur-TVdfcHBrUVRWQk0
 [ucg]: http://www.osboxes.org/guide/

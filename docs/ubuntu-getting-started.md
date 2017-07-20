@@ -30,33 +30,13 @@ apt-get update
 
 [...more information about apt-get update](./apt-get-update.md)
 
-## Additional add-on's
-
-### Hitting arrow keys adds characters in vi editor**
-
-Install vim to fix this issue...
-
-```sh
-sudo apt-get install vim
-```
-
-<<<<<<< HEAD
-[Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
-=======
-[Reference](http://askubuntu.com/questions/353911/hitting-arrow-keys-adds-characters-in-vi-editor)
-
-sudo apt-get install openssh-server openssh-client
+## Creating a /appl dirctory
 
 sudo mkdir /appl
 chown -R allan:root /appl
 
-apt-get install git
+## Basic tool requirements
 
-apt-get install yum
-
-apt-get install yum-utils
-
-
-
-
->>>>>>> 05c9f5168a9a017ca2d0c5a1c7a8f0198d6793c4
+```sh
+sudo apt-get -y install vim openssh-server openssh-client git yum yum-utils
+```
