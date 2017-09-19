@@ -14,3 +14,10 @@ services:
     image: httpd
     volumes:
       - ./html:/usr/local/apache2/htdocs/
+
+  jenkins:
+    image: ats-jenkins-image
+    ports:
+      - 50000:50000
+    volumes:
+      - /data/jenkins:/var/jenkins_home

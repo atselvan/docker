@@ -1,0 +1,95 @@
+version: '3.1'
+
+services:
+
+  nginx-proxy:
+    image: nginx:1.11
+    ports:
+      - 80:80
+    networks: 
+      - ats-ci
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition:  on-failure
+
+  ldap:
+    image: h3nrik/apacheds
+    ports:
+      - 10389:10389
+    networks:
+      - ats-ci
+    volumes:
+      - /data/ldap:/var/lib/apacheds-2.0.0-M20
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition:  on-failure
+  
+  mysql:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD_File: /run/secrets/mysql-pw
+    secrets:
+      - mysql-pw
+    networks:
+      - ats-ci
+    volumes:
+      - /data/mysql:/var/lib/mysql
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  sonarqube:
+    image: ats-sonarqube-image
+    ports:
+      - 9000:9000
+    volumes:
+      -  /data/sonarqube:/appl/sonarqube/data
+    networks:
+      - ats-ci
+    depends_on:
+      - ldap
+      - mysql
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  jenkins:
+    image: ats-jenkins-image:2.60.3
+    ports:
+      - 50000:50000
+    volumes:
+      - /data/jenkins:/var/jenkins_home
+    networks:
+      - ats-ci
+    depends_on:
+      - ldap
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == manager]
+
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8086:8080"
+    stop_grace_period: 1m30s
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+secrets:
+  mysql-pw:
+    external: true
+
+networks:
+  ats-ci:  

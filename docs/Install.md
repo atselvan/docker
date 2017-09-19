@@ -47,3 +47,10 @@ https://ubuntuforums.org/showthread.php?t=1880423
 UUID=9ADAD28CDAD26453 /data     ntfs    defaults    0       0
 
 sudo apt-get install deluge
+
+Keypass
+
+apt-add-repository ppa:jtaylor/keepass
+sudo apt-get update
+apt-get -f install
+sudo apt-get install keepass2
