@@ -1,0 +1,46 @@
+# Meta
+site_name: ATS Docker
+site_author: 'Allan Tony Selvan'
+site_url: ''
+
+# Docs dir
+docs_dir: '../docs/'
+
+# Repository
+repo_name: 'docker'
+repo_url: 'https://@bitbucket.org/privatesquare/docker.git'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 ATS'
+
+pages:
+- Home: README.md
+- Introduction: docker.md
+
+# Theme
+theme: 'material'
+
+# Extra Options
+extra:
+  palette:
+    primary: 'teal'
+    accent: 'yellow'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite(linenums=true)
+  - footnotes
+  - meta
+  - toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde

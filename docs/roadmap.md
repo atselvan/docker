@@ -17,6 +17,10 @@
 * Docker installation **[DONE]**
 * Basic Docker commands **[DONE]**
 * Docker networking **[DONE]**
+<<<<<<< HEAD
+=======
+* Docker Compose **[IN PROGRESS]**
+>>>>>>> 84ff5ceb59e0cff75162915e94c3f75dd4acc7ac
 * Docker Swarm **[IN PROGRESS]**
 * Versioning a Docker Image https://medium.com/travis-on-docker/how-to-version-your-docker-images-1d5c577ebf54
 * STPL
@@ -39,9 +43,20 @@
 * Elasticsearch
 * Logstash
 * kibana
+<<<<<<< HEAD
+=======
+* Prometheus (Monitoring)
+* Grafana
+>>>>>>> 84ff5ceb59e0cff75162915e94c3f75dd4acc7ac
 * Splunk
 * protainer
 * Swagger
 * Ansible
 * Wire Shark
+<<<<<<< HEAD
 * Slack
+=======
+* Slack **[IN PROGRESS]**
+* Jekyll
+* Mk-Docs
+>>>>>>> 84ff5ceb59e0cff75162915e94c3f75dd4acc7ac

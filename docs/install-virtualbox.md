@@ -38,6 +38,7 @@
 
 ## Linux
 
+<<<<<<< HEAD
 wget http://download.virtualbox.org/virtualbox/5.1.22/virtualbox-5.1_5.1.22-115126~Ubuntu~yakkety_amd64.deb
 
 apt-get install ./virtualbox-5.1_5.1.22-115126~Ubuntu~yakkety_amd64.deb
@@ -45,3 +46,13 @@ apt-get install ./virtualbox-5.1_5.1.22-115126~Ubuntu~yakkety_amd64.deb
 
 
 
+=======
+```sh
+# Download the install package
+wget http://download.virtualbox.org/virtualbox/5.1.22/virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
+# Install the package
+sudo dpkg -i virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
+# Cleanup
+rm -rf virtualbox-5.1_5.1.22-115126~Ubuntu~xenial_amd64.deb
+```
+>>>>>>> 84ff5ceb59e0cff75162915e94c3f75dd4acc7ac
