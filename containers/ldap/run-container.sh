@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Variables
-IMAGE="h3nrik/apacheds"
+APACHEDS_VERSION="2.0.0-M20"
+IMAGE="h3nrik/apacheds:$APACHEDS_VERSION"
 NAME="ldap"
-VOLUME="/data/ldap:/var/lib/apacheds-2.0.0-M20"
+VOLUME="/Users/allanselvan/tools/ldap:/var/lib/apacheds-$APACHEDS_VERSION"
 NETWORK="isolated_nw"
 PORT="10389:10389"
 

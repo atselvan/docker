@@ -1,4 +1,15 @@
-Ćreating a schema
+# Working with a MySQL database
+
+## Prerequisites 
+
+* MySQL database
+* MySQL workbench
+
+## Connecting to a MySQL database
+
+![mysql-connection](images/mysql-connection.png)
+
+## Creating a schema
 https://docs.rapidminer.com/server/installation/creating_mysql_db.html
 
 Creating a new user and assign privileges
