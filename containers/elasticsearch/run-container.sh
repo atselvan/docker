@@ -3,7 +3,7 @@
 # Variables
 IMAGE="elasticsearch:1.7.6"
 NAME="elasticsearch"
-VOLUME="/Users/allanselvan/tools/$NAME:/usr/share/elasticsearch/data"
+VOLUME="/Users/allanselvan/data/$NAME:/usr/share/elasticsearch/data"
 NETWORK="isolated_nw"
 PORT1="9200:9200"
 PORT2="9300:9300"

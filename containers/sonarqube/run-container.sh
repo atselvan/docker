@@ -3,7 +3,7 @@
 # Variables
 IMAGE="ats-sonarqube-image"
 NAME="sonarqube"
-VOLUME="/Users/allanselvan/tools/sonarqube:/appl/sonarqube/data"
+VOLUME="/Users/allanselvan/data/sonarqube:/appl/sonarqube/data"
 NETWORK="isolated_nw"
 PORT="9000:9000"
 
