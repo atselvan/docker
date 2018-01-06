@@ -1,13 +1,11 @@
 #!/bin/bash
 
 # Variables
-VERSION="2.89.1.6"
-IMAGE="cloudbees/jenkins-operations-center:$VERSION"
-NAME="jenkins-oc"
-VOLUME="/Users/allanselvan/data/$NAME:/var/jenkins_home"
-DOCKER_VOLUME="/var/run/docker.sock:/var/run/docker.sock"
+IMAGE="sonatype/nexus"
+NAME="nexus2"
+VOLUME="/Users/allanselvan/data/$NAME:/sonatype-work"
 NETWORK="isolated_nw"
-PORT="8888:8080"
+PORT="8081:8081"
 
 RUNNING=`docker ps | grep -c $NAME`
 if [ $RUNNING -gt 0 ]
@@ -30,4 +28,4 @@ echo "[INFO] VOLUME  : $VOLUME"
 echo "[INFO] NETWORK : $NETWORK"
 echo "[INFO] PORT    : $PORT"
 
-docker run --name $NAME -v $VOLUME -v $DOCKER_VOLUME -d -p $PORT -p 7776:7776 --network=$NETWORK $IMAGE
+docker run --name $NAME -v $VOLUME -d -p $PORT --network=$NETWORK $IMAGE

@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Variables
-VERSION="2.89.1.6"
-IMAGE="cloudbees/jenkins-operations-center:$VERSION"
-NAME="jenkins-oc"
-VOLUME="/Users/allanselvan/data/$NAME:/var/jenkins_home"
-DOCKER_VOLUME="/var/run/docker.sock:/var/run/docker.sock"
+VERSION="1.13.7"
+IMAGE="nginx:$VERSION"
+NAME="nginx-proxy"
+VOLUME_CONF="/Users/allanselvan/data/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf"
+VOLUME_HTML="/Users/allanselvan/data/nginx/html:/usr/share/nginx/html"
 NETWORK="isolated_nw"
-PORT="8888:8080"
+PORT="80:80"
 
 RUNNING=`docker ps | grep -c $NAME`
 if [ $RUNNING -gt 0 ]
@@ -30,4 +30,4 @@ echo "[INFO] VOLUME  : $VOLUME"
 echo "[INFO] NETWORK : $NETWORK"
 echo "[INFO] PORT    : $PORT"
 
-docker run --name $NAME -v $VOLUME -v $DOCKER_VOLUME -d -p $PORT -p 7776:7776 --network=$NETWORK $IMAGE
+docker run --name $NAME -d -p $PORT -v $VOLUME_CONF -v $VOLUME_HTML --network=$NETWORK $IMAGE

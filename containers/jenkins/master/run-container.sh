@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Variables
-IMAGE="cloudbees/jenkins-enterprise"
+VERSION="2.89.1.6"
+IMAGE="cloudbees/jenkins-enterprise:$VERSION"
 NAME="jenkins-master"
 VOLUME="/Users/allanselvan/data/$NAME:/var/jenkins_home"
 DOCKER_VOLUME="/var/run/docker.sock:/var/run/docker.sock"
