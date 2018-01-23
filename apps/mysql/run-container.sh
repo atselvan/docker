@@ -3,7 +3,7 @@
 # Variables
 IMAGE="mysql"
 NAME="mysql"
-VOLUME="/Users/allanselvan/data/mysql:/var/lib/mysql"
+VOLUME="/data/mysql:/var/lib/mysql"
 NETWORK="isolated_nw"
 PORT="3306:3306"
 ENVIRONMENT="MYSQL_ROOT_PASSWORD=welcome"
