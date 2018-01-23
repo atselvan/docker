@@ -8,22 +8,22 @@ SERVICE_NAME="visualizer"
 PORT="9002:8080"
 DOCKER_VOLUME="src=/var/run/docker.sock,dst=/var/run/docker.sock"
 
-EXISTING=`docker service ls | grep -c $SERVICE_NAME`
+EXISTING=`docker service ls | grep -c $NAME`
 if [ $EXISTING -gt 0 ]
 then
-   echo "Removing $SERVICE_NAME service"
-   docker service rm $SERVICE_NAME
+   echo "Removing $NAME service"
+   docker service rm $NAME
 fi
 
-echo "Running a new service with name $SERVICE_NAME"
+echo "Running a new service with name $NAME"
 echo "[INFO] IMAGE   : $IMAGE"
-echo "[INFO] NAME    : $SERVICE_NAME"
+echo "[INFO] NAME    : $NAME"
 echo "[INFO] PORT    : $PORT"
 
 docker service create \
-  --name=$SERVICE_NAME \
+  --name=$NAME \
   --publish=$PORT/tcp \
   --detach=true \
   --constraint=node.role==manager \
-  --mount=type=bind, $DOCKER_VOLUME \
+  --mount=type=bind,$DOCKER_VOLUME\
   $IMAGE
