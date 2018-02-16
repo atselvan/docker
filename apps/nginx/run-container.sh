@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # Variables
-VERSION="1.13.7"
+VERSION="1.13.8"
 IMAGE="nginx:$VERSION"
 NAME="nginx-proxy"
-VOLUME_CONF="/Users/allanselvan/data/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf"
-VOLUME_HTML="/Users/allanselvan/data/nginx/html:/usr/share/nginx/html"
-NETWORK="isolated_nw"
+VOLUME_CONF="/data/nginx/conf:/etc/nginx/conf.d"
+VOLUME_HTML="/data/nginx/html:/usr/share/nginx/html"
+NETWORK="privatesquare"
 PORT="80:80"
+PORT="443:443"
 
 RUNNING=`docker ps | grep -c $NAME`
 if [ $RUNNING -gt 0 ]
@@ -26,7 +27,8 @@ fi
 echo "Running a new instance with name $NAME"
 echo "[INFO] IMAGE   : $IMAGE"
 echo "[INFO] NAME    : $NAME"
-echo "[INFO] VOLUME  : $VOLUME"
+echo "[INFO] VOLUME  : $VOLUME_CONF"
+echo "[INFO] VOLUME  : $VOLUME_DATA"
 echo "[INFO] NETWORK : $NETWORK"
 echo "[INFO] PORT    : $PORT"
 
