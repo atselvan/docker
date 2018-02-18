@@ -3,22 +3,21 @@
 # Parameters
 ACTION_DEFAULT="create"
 ACTION="${1:-$ACTION_DEFAULT}"
-PREFIX=ats
 
 # Network params
-OVERLAY_NETWORK=${PREFIX}-ci
+OVERLAY_NETWORK=privatesquare
 PROXY_NETWORK=proxy
 
 # JENKINS SLAVE SERVICE
-SERVICE_NAME=${PREFIX}-jenkins-slave-service
+SERVICE_NAME=jenkins-slave-service
 IMAGE=vfarcic/jenkins-swarm-agent
-NUMBER_OF_EXECUTORS=2
+NUMBER_OF_EXECUTORS=1
 SLAVE_LABEL=docker
 
 # Jenkins ST M01
-JENKINS_MASTER_IP=192.168.2.69
+JENKINS_MASTER_HOST=cicd.privatesquare.in
 #JENKINS_MASTER_URL="http://${JENKINS_MASTER_IP}:8080/jenkins"
-JENKINS_MASTER_URL="http://${JENKINS_MASTER_IP}:8080"
+JENKINS_MASTER_URL="http://${JENKINS_MASTER_HOST}:8080"
 ######################################
 
 echo "================================"
