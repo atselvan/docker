@@ -51,9 +51,11 @@ case $ACTION in
             -e COMMAND_OPTIONS="\
             -master ${JENKINS_MASTER_URL} \
             -labels ${SLAVE_LABEL} -executors ${NUMBER_OF_EXECUTORS} \
+            -username C27872 \
+            -password welkom \
             -mode exclusive" \
             --mode global \
-            --constraint 'node.role==worker' \
+            --constraint 'node.role==manager' \
             --mount "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock" \
             --mount "type=bind,source=/tmp,target=/workspace" \
             ${IMAGE}

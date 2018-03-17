@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # Variables
-IMAGE="mysql"
-NAME="mysql"
-VOLUME="/data/mysql:/var/lib/mysql"
-NETWORK="isolated_nw"
-PORT="3306:3306"
-ENVIRONMENT="MYSQL_ROOT_PASSWORD=welcome"
+IMAGE="jboss/keycloak"
+NAME="keycloak"
+NETWORK="privatesquare"
+PORT="8080:8080"
 
 RUNNING=`docker ps | grep -c $NAME`
 if [ $RUNNING -gt 0 ]
@@ -29,4 +27,4 @@ echo "[INFO] VOLUME  : $VOLUME"
 echo "[INFO] NETWORK : $NETWORK"
 echo "[INFO] PORT    : $PORT"
 
-docker run --name $NAME -v $VOLUME -d -p $PORT -e $ENVIRONMENT --network=$NETWORK $IMAGE
+docker run --name $NAME -d -p $PORT -e KEYCLOAK_USER=atselvan -e KEYCLOAK_PASSWORD=welkom --network=$NETWORK $IMAGE

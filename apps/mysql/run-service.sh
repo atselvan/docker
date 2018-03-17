@@ -6,10 +6,10 @@
 # /data/${NAME} path should exist on the source for the bind
 
 # Variables
-VERSION="latest"
+VERSION="5.7.21"
 IMAGE="mysql:${VERSION}"
 NAME="mysql"
-VOLUME="source=/data/$NAME,target=/var/lib/mysql"
+VOLUME="source=/Users/allanselvan/data/$NAME,target=/var/lib/mysql"
 NETWORK="privatesquare"
 PORT="3306:3306"
 
